@@ -16,8 +16,10 @@ cd mosh-1.4.0
 # moshインストール
 ./autogen.sh
 ./configure
-make (<> make clean)
+make
 sudo make install
 
 # versionが正常に表示されれば成功
 mosh —version
+# インストール中問題が発生する場合
+make clean
